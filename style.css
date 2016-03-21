@@ -1,0 +1,46 @@
+body {
+    background: #D5EDF5;
+    animation-name: examle;
+    animation-duration: 5s;
+}
+
+.my-svg {
+    width: 95%;
+    height: 95%;
+}
+
+.border {
+    stroke:black;
+    stroke-width: 1;
+    stroke-opacity: 90%;
+}
+
+.black-fill {
+    fill: black;
+}
+
+.stroke-black {
+    stroke: black;
+    fill: transparent;
+}
+
+.white-fill {
+    fill: white;
+}
+
+.red-fill {
+    fill: #F27E57;
+}
+
+.ears {
+    stroke-linejoin: round;
+}
+
+.sun {
+    stroke: yellow;
+    stroke-dasharray: 6;
+    stroke-width: 70;
+    stroke-opacity: 0.7;
+    fill: yellow;
+    fill-opacity: 0.3;
+}
