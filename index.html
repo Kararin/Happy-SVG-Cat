@@ -51,6 +51,14 @@
 
             <!--sun-->
             <circle class="sun" r=50 cx='700' cy='100'/>
+
+            <defs>
+                <filter id="sun-root" x="0" y="0" width="200%" height="200%">
+                <feGaussianBlur result="blurOut" in="SourceGraphict" stdDeviation="15" />
+                </filter>
+            </defs>
+
+            <circle class="sun-root" r=60 cx='700' cy='100' filter ="url(#sun-root)"/>
          </svg>
 
 </body>
