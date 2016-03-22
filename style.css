@@ -1,7 +1,5 @@
 body {
     background: #D5EDF5;
-    animation-name: examle;
-    animation-duration: 5s;
 }
 
 .my-svg {
@@ -36,11 +34,31 @@ body {
     stroke-linejoin: round;
 }
 
+@keyframes sun-animation {
+    0% {stroke-width: 70;}
+    25% {stroke-width: 90;}
+    50% {stroke-width: 110;}
+    75% {stroke-width: 90;}
+    100% {stroke-width: 70;}
+}
+
+@keyframes sun-animation-rotate {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(30deg);}
+    75% {transform: rotate(40deg);}
+    100% {transform: rotate(50deg);}
+}
+
 .sun {
     stroke: yellow;
     stroke-dasharray: 6;
     stroke-width: 70;
     stroke-opacity: 0.7;
-    fill: yellow;
-    fill-opacity: 0.3;
+    fill: transparent;
+
+    transform-origin: 50% 50%;
+    animation-name: sun-animation-rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
